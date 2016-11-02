@@ -1,0 +1,45 @@
+/*
+brown: #4F3A28;
+white: #ffffff;
+maroon: #4D1B14;
+tan-brown: #AA762F;
+light-brown: #844421;
+*/
+
+#header {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	padding: 0 15px;
+	border-bottom: 1px solid #e1e8ed;
+}
+
+#header a {
+	flex: 1 1 auto;
+	text-align: center;
+	line-height: 40px;
+	font-size: 1.2em;
+	text-decoration: none;
+	color: #292f33;
+}
+
+#header a:not(.first) {
+	border-left: 1px solid #e1e8ed;
+}
+
+#invite {
+	width: 100%;
+	background: -webkit-radial-gradient(#4F3A28 34%, #844421 78%, #AA762F 98%); /* Safari 5.1-6.0 */
+	background: -o-radial-gradient(#4F3A28 34%, #844421 78%, #AA762F 98%); /* For Opera 11.6-12.0 */
+	background: -moz-radial-gradient(#4F3A28 34%, #844421 78%, #AA762F 98%); /* For Firefox 3.6-15 */
+	background: radial-gradient(#4F3A28 34%, #844421 78%, #AA762F 98%); /* Standard syntax */
+}
+
+#invite div {
+	line-height: 80px;
+	font-weight: 900;
+	text-align: center;
+	margin: 0 auto;
+}
