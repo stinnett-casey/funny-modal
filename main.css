@@ -45,7 +45,7 @@ light-gray: #e1e8ed;
 	background: radial-gradient(#4F3A28 34%, #844421 78%, #AA762F 98%); /* Standard syntax */
 }
 
-#invite div {
+#invite div, .message {
 	line-height: 80px;
 	font-weight: 900;
 	font-size: 2em;
@@ -123,4 +123,109 @@ light-gray: #e1e8ed;
 	font-size: 1.2em;
 	text-decoration: none;
 	color: #292f33;
+}
+
+.modal-wrapper {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.6);
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.modal-wrapper .modal {
+	width: 90%;
+	height: 250px;
+	margin: 0 auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	background: -webkit-radial-gradient(#4F3A28 34%, #844421 78%, #AA762F 98%); /* Safari 5.1-6.0 */
+	background: -o-radial-gradient(#4F3A28 34%, #844421 78%, #AA762F 98%); /* For Opera 11.6-12.0 */
+	background: -moz-radial-gradient(#4F3A28 34%, #844421 78%, #AA762F 98%); /* For Firefox 3.6-15 */
+	background: radial-gradient(#4F3A28 34%, #844421 78%, #AA762F 98%); /* Standard syntax */
+}
+
+.modal #close {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	color: rgba(132, 68, 33, .7);
+}
+
+#close:hover {
+	color: rgb(132, 68, 33);
+	cursor: pointer;
+}
+
+.form-wrapper {
+	width: 50%;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.form-wrapper input[type="email"] {
+	width: 75%;
+	padding: 18px;
+	position: relative;
+	opacity: .6;
+	font-size: 25px;
+}
+
+button {
+	padding: 16px;
+	line-height: 20px;
+	font-size: 24px;
+	white-space: normal;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 500;
+    position: relative;
+    margin: 0;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: baseline;
+}
+
+#ocean{
+  position:absolute;
+  width:100%;
+  min-height:100%;
+  background-image: -webkit-gradient(
+  linear,
+  left bottom,
+  left top,
+  color-stop(0, rgb(0,50,150)),
+  color-stop(0.50, rgb(0,150,255))
+  );
+}
+
+.wave{
+  background:#a8e3ff;
+  display:inline-block;
+  height:60%;
+  width:10px;
+  position:absolute;
+  -webkit-animation-name:             dostuff; 
+  -webkit-animation-duration:         3s; 
+  -webkit-animation-iteration-count:  infinite;
+  -webkit-transition-timing-function: ease-in-out;
+}
+
+
+@-webkit-keyframes dostuff{
+  0%{
+    height:60%;
+  }
+  50%{ 
+    height:40%;
+  }
+  100%{ 
+    height:60%;
+  }
 }
