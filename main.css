@@ -153,10 +153,11 @@ light-gray: #e1e8ed;
 	top: 5px;
 	right: 5px;
 	color: rgba(132, 68, 33, .7);
+  font-size: 1.5em;
 }
 
 #close:hover {
-	color: rgb(132, 68, 33);
+	color: rgb(87, 50, 30);
 	cursor: pointer;
 }
 
